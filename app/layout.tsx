@@ -27,10 +27,8 @@ export default function RootLayout({
       lang="en"
       className={`bg-white dark:bg-gray-950 text-black dark:text-white ${manrope.className}`}
     >
-      <head>
-        <CSideScript options={{ enableProxyFirstPartyScripts: true, enableScriptTracking: true }} />
-      </head>
       <body className="min-h-[100dvh] bg-gray-50">
+        <CSideScript options={{ enableProxyFirstPartyScripts: true, enableScriptTracking: true }} />
 
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">{`
