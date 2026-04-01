@@ -11,8 +11,8 @@ const nextConfig: NextConfig = {
         source: '/(.*)',
         headers: [
           {
-            key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self'; report-uri https://proxy.csidetm.com/csp; report-to csp-endpoint;"
+            key: 'Content-Security-Policy-Report-Only',
+            value: "default-src 'self'; script-src 'self' https://proxy.csidetm.com; connect-src 'self' https://proxy.csidetm.com; report-uri https://proxy.csidetm.com/csp; report-to csp-endpoint;"
           },
           {
             key: 'Reporting-Endpoints',
